@@ -39,7 +39,9 @@
     "pages/coupon/coupon",
     "pages/near/index/index",
     "pages/near/shop/shop",
-    "pages/ucenter/applyShop/applyShop"
+    "pages/ucenter/applyShop/applyShop",
+    "pages/near/room/room",
+    "pages/near/bookroom/bookroom"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
