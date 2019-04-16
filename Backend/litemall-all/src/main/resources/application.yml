@@ -5,7 +5,11 @@ spring:
     encoding: UTF-8
 
 server:
-  port: 8080
+  port: 3389
+  ssl:
+      key-store: sandc.xyz.jks
+      key-store-password: fs5oals1eg86ax
+      key-store-type: JKS
 
 logging:
   level:

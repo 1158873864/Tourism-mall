@@ -17,13 +17,13 @@ Page({
     },
     hasLogin: true //TODO
   },
-  onLoad: function(options) {
+  onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
   },
-  onReady: function() {
+  onReady: function () {
 
   },
-  onShow: function() {
+  onShow: function () {
 
     //获取用户的登录信息
     if (app.globalData.hasLogin) {
@@ -34,7 +34,7 @@ Page({
       });
 
       let that = this;
-      util.request(api.UserIndex).then(function(res) {
+      util.request(api.UserIndex).then(function (res) {
         if (res.errno === 0) {
           that.setData({
             order: res.data.order
@@ -73,9 +73,9 @@ Page({
       }
       wx.navigateTo({
         url: route,
-        success: function(res) {},
-        fail: function(res) {},
-        complete: function(res) {},
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
       })
     } else {
       wx.navigateTo({
@@ -83,7 +83,7 @@ Page({
       });
     };
   },
-  goCoupon: function() {
+  goCoupon: function () {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/couponList/couponList"
@@ -94,7 +94,7 @@ Page({
       });
     };
   },
-  goGroupon: function() {
+  goGroupon: function () {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/groupon/myGroupon/myGroupon"
@@ -105,7 +105,7 @@ Page({
       });
     };
   },
-  goCollect :function() {
+  goCollect: function () {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/collect/collect"
@@ -116,7 +116,7 @@ Page({
       });
     };
   },
-  goFeedback:function(e) {
+  goFeedback: function (e) {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/feedback/feedback"
@@ -127,7 +127,7 @@ Page({
       });
     };
   },
-  goFootprint: function() {
+  goFootprint: function () {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/footprint/footprint"
@@ -138,7 +138,7 @@ Page({
       });
     };
   },
-  goAddress: function() {
+  goAddress: function () {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/address/address"
@@ -149,18 +149,18 @@ Page({
       });
     };
   },
-  goapplyShop:function(){
-    if(this.data.hasLogin){
+  goapplyShop: function () {
+    if (this.data.hasLogin) {
       wx.navigateTo({
-        url:"/pages/ucenter/applyShop/applyShop"
+        url: "/pages/ucenter/applyShop/applyShop"
       });
-    }else{
+    } else {
       wx.navigateTo({
         url: "/pages/auth/login/login"
-      });     
+      });
     };
   },
-  bindPhoneNumber: function(e) {
+  bindPhoneNumber: function (e) {
     if (e.detail.errMsg !== "getPhoneNumber:ok") {
       // 拒绝授权
       return;
@@ -178,7 +178,7 @@ Page({
     util.request(api.AuthBindPhone, {
       iv: e.detail.iv,
       encryptedData: e.detail.encryptedData
-    }, 'POST').then(function(res) {
+    }, 'POST').then(function (res) {
       if (res.errno === 0) {
         wx.showToast({
           title: '绑定手机号码成功',
@@ -188,24 +188,24 @@ Page({
       }
     });
   },
-  goAfterSale: function() {
+  goAfterSale: function () {
     wx.showToast({
       title: '目前不支持',
       icon: 'none',
       duration: 2000
     });
   },
-  aboutUs: function() {
+  aboutUs: function () {
     wx.navigateTo({
       url: '/pages/about/about'
     });
   },
-  exitLogin: function() {
+  exitLogin: function () {
     wx.showModal({
       title: '',
       confirmColor: '#b4282d',
       content: '退出登录？',
-      success: function(res) {
+      success: function (res) {
         if (!res.confirm) {
           return;
         }

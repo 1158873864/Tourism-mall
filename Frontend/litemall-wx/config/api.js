@@ -1,6 +1,6 @@
 // 以下是业务服务器API地址
 // 本机开发时使用
-var WxApiRoot = 'https://139.199.222.72:3389/wx/'; 
+var WxApiRoot = 'https://sandc.xyz:3389/wx/'; 
 // var WxApiRoot = 'http://120.79.250.63:8080/wx/'; 
 // var AdminApiRoot = 'http://10.107.30.118:8080/admin/';
 // var WxApiRoot = 'http://120.79.250.63:8080/wx/'; 

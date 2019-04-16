@@ -10,6 +10,7 @@
     "pages/ucenter/feedback/feedback",
     "pages/ucenter/footprint/footprint",
     "pages/ucenter/order/order",
+    "pages/ucenter/orderIndex/orderIndex",
     "pages/ucenter/orderDetail/orderDetail",
     "pages/ucenter/couponList/couponList",
     "pages/ucenter/couponSelect/couponSelect",
@@ -71,7 +72,7 @@
         "text": "附近"
       },
       {
-        "pagePath": "pages/ucenter/order/order",
+        "pagePath": "pages/ucenter/orderIndex/orderIndex",
         "iconPath": "static/images/cart.png",
         "selectedIconPath": "static/images/cart@selected.png",
         "text": "订单"

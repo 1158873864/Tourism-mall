@@ -13,7 +13,7 @@ Page({
     load_statue: true,
     shopInfo: {
       name: 'litemall',
-      address: 'https://github.com/linlinjava/litemall',
+      address: 'https://github.com/tourism-mall-project/Tourism-mall',
       latitude: 31.201900,
       longitude: 121.587839,
       linkPhone: '021-xxxx-xxxx',

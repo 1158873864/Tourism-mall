@@ -5,6 +5,15 @@
   </view>
   </view>
 
+
+<modal wx:if="{{showUserTagsModal}}" height='60%' title="请输入手机号" bindcancel="userTagsModalCancel" bindconfirm='userTagsModalConfirm1'>
+          <view class='container'>
+            <view class='tag-wrapper'>
+               <input bindinput='updatePhone'></input>
+              
+            </view>
+          </view>
+        </modal>
   <!-- <view class='container'>
   <text class='info'>由于您是第一次登陆本小程序,请点击授权后登陆</text>
   <button class='jrq__button login-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
