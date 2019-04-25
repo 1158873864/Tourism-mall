@@ -9,7 +9,8 @@
 <modal wx:if="{{showUserTagsModal}}" height='60%' title="请输入手机号" bindcancel="userTagsModalCancel" bindconfirm='userTagsModalConfirm1'>
           <view class='container'>
             <view class='tag-wrapper'>
-               <input bindinput='updatePhone'></input>
+               <text>输入电话号码，免费享受人工向导！让您在三亚吃喝玩乐不迷路！</text>
+               <input bindinput='updatePhone' style="height: 60rpx"></input>
               
             </view>
           </view>
