@@ -11,7 +11,7 @@
     <view class="b">
       <view class="item" wx:for="{{hotGoods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
         <!-- <navigator url="/pages/near/room/room?id=1005000"> -->
-        <navigator url="/pages/near/shop/shop?id=1005000">
+        <navigator url="/pages/near/shop/shop?id={{item.id}}">
           <image class="img" src="{{item.picUrl}}" background-size="cover"></image>
           <view class="right">
             <view class="text">
